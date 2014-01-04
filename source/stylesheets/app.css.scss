@@ -1,31 +1,20 @@
 @import "settings";
 @import "foundation";
+@import "compass";
 
 
-header {
-  @include grid-row;
 
-  .logo  { @include grid-column($columns:3, $center:true); }
-  padding-bottom: em-calc(10px);
 
+body {
+  @include background-image(linear-gradient(#ddd, #eee 100%));
+  background-attachment: fixed;  
 }
 
+header.panel {
+  border-bottom: 1px solid #bbb;
+}
 
-.main-content {
-  @include grid-row;
-
-  aside  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:3);
-    // }
-  }
-
-  article  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:8, $offset: 1);
-    // }
-  }
-
+.panel-custom {
+  background-color: #fff;
+  padding: $panel-padding;
 }

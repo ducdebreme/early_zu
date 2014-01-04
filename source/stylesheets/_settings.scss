@@ -3,7 +3,7 @@
 //
 
 // Uncomment to use rem-calc() in your settings
-// @import "foundation/functions";
+@import "foundation/functions";
 
 // $experimental: true;
 
@@ -19,7 +19,7 @@
 // $base-line-height: 150%;
 
 // This is the default html and body font-size for the base rem value.
-// $rem-base: 16px;
+$rem-base: 16px;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 // $include-html-classes: true;
@@ -30,7 +30,7 @@
 
 // $include-html-grid-classes: $include-html-classes;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1200);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -50,7 +50,7 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -930,7 +930,7 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: white;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -952,14 +952,14 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
+$topbar-link-color: #333;
+$topbar-link-color-hover: #000;
+$topbar-link-color-active: #000;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727  ;
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-hover: #eee  ;
+$topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: darken($primary-color, 5%);
 // $topbar-link-font-family: $body-font-family;
 
