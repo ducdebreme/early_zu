@@ -19,6 +19,7 @@ header.panel {
 .panel-custom {
   background-color: #fff;
   padding: $panel-padding;
+  @include single-box-shadow(#bbb,0,0,10px);
 }
 
 .page-footer {
@@ -29,4 +30,8 @@ header.panel {
     @include link-colors(#fff,#fff,#fff,#fff,#fff)
   }
 
+}
+
+.margin-top {
+  margin-top: $panel-padding;
 }
