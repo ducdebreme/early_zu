@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "The Middleman" %></title>
-    
+
     <%= stylesheet_link_tag "app", "style" %>
     <%= javascript_include_tag "modernizr" %>
   </head>
@@ -14,6 +14,8 @@
     <%= partial( :header) %>
 
     <%= yield %>
+
+    <%= partial( :footer) %>
 
     <%= javascript_include_tag  "all" %>
   </body>

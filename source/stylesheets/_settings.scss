@@ -36,7 +36,7 @@ $row-width: rem-calc(1200);
 
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: #222;
+$body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -944,7 +944,7 @@ $topbar-bg-color: white;
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: darken($topbar-bg-color, 0%);
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-toggle-size: 5px;
@@ -976,12 +976,12 @@ $topbar-link-bg-active: $primary-color;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-icon-color: $body-font-color;
+$topbar-menu-link-color-toggled: lighten($body-font-color, 20%);
+$topbar-menu-icon-color-toggled: lighten($body-font-color, 20%);
 
 // Transitions and breakpoint styles
-// $topbar-transition-speed: 300ms;
+$topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 // $topbar-breakpoint: #{upper-bound($medium-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})";
@@ -993,3 +993,5 @@ $topbar-link-bg-active: $primary-color;
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+
+// $header-font-family: "Droid Serif";
