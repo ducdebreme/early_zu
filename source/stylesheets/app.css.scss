@@ -2,36 +2,10 @@
 @import "foundation";
 @import "compass";
 
+// my custom files
+@import "layout";
+@import "utils";
 
+// page/component specific
+@import "home";
 
-
-body {
-  background-color: #eee;
-  @include background-image(linear-gradient(#ddd, #eee 100%));
-  background-attachment: fixed;  
-}
-
-header.panel {
-  border-bottom: 1px solid #bbb;
-}
-
-// assign this class to create white background
-.panel-custom {
-  background-color: #fff;
-  padding: $panel-padding;
-  @include single-box-shadow(#bbb,0,0,10px);
-}
-
-.page-footer {
-  background-color: darken($primary-color, 10%);
-  padding: $panel-padding;
-  margin-top: $panel-padding;
-  a {
-    @include link-colors(#fff,#fff,#fff,#fff,#fff)
-  }
-
-}
-
-.margin-top {
-  margin-top: $panel-padding;
-}
